@@ -135,4 +135,7 @@ server.post('/login',(req,res)=>{
 
 
 
-server.listen(3006)
+const PORT= process.env.PORT || 3006
+server.listen(PORT,()=>{
+    console.log('serer en el puerto', PORT)
+})
